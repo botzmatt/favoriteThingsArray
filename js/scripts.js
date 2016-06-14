@@ -8,6 +8,11 @@ $(document).ready(function() {
     console.log(cloneArray);
     removed = cloneArray.splice(3, 2);
 
+    var iceCreamFlavors = ["rocky road", "chocolate", "superman", "blue moon"];
+
+    iceCreamFlavors.forEach(function(iceCreamFlavor) {
+      $(".iceCreamFlavors").append("You picked: " + iceCreamFlavor + "!<br>");
+    });
 
     console.log(cloneArray);
     console.log(removed);
